@@ -1,0 +1,20 @@
+.pam-expander-title {
+  cursor: pointer;
+  position: relative;
+}
+
+.pam-expander-content {
+  display: none;
+}
+
+.pam-expander > .pam-expander-title:after {
+  @extend .pam-icon;
+  content: "\f067";
+  position: absolute;
+  font-size: 0.5em;
+  top: 0.5em;
+  right: 0.5em;
+}
+.pam-expander.active > .pam-expander-title:after {
+  content: "\f068";
+}

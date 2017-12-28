@@ -1,0 +1,66 @@
+$nav-bg: #000;
+$nav-link-bg: #000;
+$nav-link-color: #fff;
+$nav-link-hoverbg: #333;
+$nav-link-hovercolor: #ddd;
+$subnav-bg: #333;
+$subnav-link-bg: #333;
+$subnav-link-color: #ddd;
+$subnav-link-hoverbg: #000;
+$subnav-link-hovercolor: #fff;
+
+
+.pam-auto-nav {
+  background: $nav-bg;
+  position: relative;
+  z-index: 1;
+  a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    @include transition(background-color .2s ease-in-out, color .2s ease-in-out);
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+  > ul {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    > li {
+      display: table-cell;
+      > a {
+        background: $nav-link-bg;
+        color: $nav-link-color;
+        text-align: center;
+      }
+      &:hover > a {
+        background: $nav-link-hoverbg;
+        color: $nav-link-hovercolor;
+      }
+    }
+  }
+  .pam-sub-nav{
+    position: relative;
+    > ul{
+      background: $subnav-bg;
+      box-shadow: 3px 3px 5px rgba(0,0,0,.25);
+      display: none;
+      margin: 0;
+      min-width: 100%;
+      position: absolute;
+      a {
+        background: $subnav-link-bg;
+        color: $subnav-link-color;
+        &:hover {
+          background: $subnav-link-hoverbg;
+          color: $subnav-link-hovercolor;
+        }
+      }
+    }
+  }
+}

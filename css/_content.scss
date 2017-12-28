@@ -1,0 +1,150 @@
+.pam-page-index{
+  .pam-slide {
+    padding-bottom:26.5%;
+    width: 100%;
+    &.pam-slide-1 {
+      background: #aaa;
+    }
+    &.pam-slide-2 {
+      background: #333;
+    }
+    &.pam-slide-3 {
+      background: #f2f2f2;
+    }
+  }
+  [class^="pam-tier-"]{
+    padding: 4em 0;
+  }
+  .pam-tier-1{
+    text-align: center;
+  }
+}
+.pam-page-interior{
+  background: #777;
+  .pam-page-content-container{
+    > .title-container{
+      background: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    > .pam-page-content{
+      padding: 1em;
+      background: #fff;
+      margin: 20px auto;
+    }
+  }
+  .pam-section{
+    padding: 10px 10px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+}
+//Team Page
+.pam-page-1{
+  .team-container{
+    .headshot{
+      background: #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+    .bio{
+      background: #f2f2f2;
+      padding: 10px;
+    }
+  }
+}
+
+//Process Page
+.pam-page-6{
+  .process-container{
+    text-align: center;
+    h2{
+      text-align: center;
+    }
+    .pam-row{
+      @extend .pam-table-container;
+    }
+    .pam-columns{
+      padding: 1em;
+      color: #fff;
+    }
+    $processbg: #333;
+    $processbg2: #555;
+    $elements: 7;
+    @for $i from 0 to $elements {
+      .pam-columns:nth-child(#{$i}) {
+        @include background-image(
+         linear-gradient( lighten($processbg, $i * 3), lighten($processbg2, $i * 3) )
+        );
+      }
+    }
+    h3{
+      font-size: 3rem;
+      background: #f2f2f2;
+      padding: 1.5rem 0;
+      color: #333;
+    }
+  }
+}
+//Working with Other Advisors
+.pam-page-8{
+  .pam-section{
+    .pam-row{
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      a.pam-button{
+        i.pam-fa{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+//Helpful Links
+.pam-page-12 {
+  .helpful-links{
+    ul {
+      padding: 0;
+      margin: 0;
+      li{
+        list-style: none;
+        margin-bottom: 5px;
+        a.pam-button{
+          display: block;
+          text-align: center;
+          padding: 2em;
+        }
+      }
+    }
+  }
+}
+
+.pam-page-14{
+  .pam-top-quote{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em;
+    border: 1px solid #ddd;
+    background: #f6f6f4;
+  }
+  .calculators{
+    ul {
+      padding: 0;
+      margin: 0;
+      li{
+        list-style: none;
+        margin-bottom: 5px;
+        a.pam-button{
+          display: block;
+          text-align: center;
+          padding: 2em;
+        }
+      }
+    }
+  }
+}
+.reg-rep{
+  color: #f00 !important;
+}

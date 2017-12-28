@@ -1,0 +1,66 @@
+.pam-header {
+  background: #fff;
+  padding: 10px 0;
+  .logo-left{
+    font-size: 3rem;
+  }
+  .header-right{
+    text-align: right;
+    a{
+      display: inline-block;
+      vertical-align: middle;
+      color: #ddd;
+    }
+    .pam-hover-drop-down{
+      a{
+        color: #333;
+      }
+    }
+  }
+}
+
+.pam-footer {
+  font-family: Verdana, Sans-Serif;
+  background: #f2f2f2;
+  border-top: 1px solid #f3f3f3;
+  font-size: 11px;
+  padding: 16px;
+  text-align: center;
+  a {
+    color: #444;
+    text-decoration: none;
+  }
+}
+
+@media #{$large-up}{
+  .pam-table-container{
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    > .pam-columns{
+      float: none;
+      display: table-cell;
+      &.valign-bottom{
+        img{
+          vertical-align: bottom;
+        }
+        vertical-align: bottom;
+      }
+      &.valign-top{
+        img{
+          vertical-align: top;
+        }
+        vertical-align: top
+      }
+      &.valign-middle{
+        img{
+          vertical-align: middle;
+        }
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.reg-rep{
+  color: #f00;
+}

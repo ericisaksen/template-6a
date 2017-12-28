@@ -1,0 +1,103 @@
+<!-- BEGIN TEMPLATES -->
+<script data-pam-template-name="layout"
+        type="application/x-pam-template">
+  <div class="pam-mobile-nav">
+    <ul>
+      <li><a class="pam-mobile-nav-close">Close</a></li>
+      <li><a href="index.cfm">Home</a></li>
+    </ul>
+    <%= render("nav") %>
+  </div>
+  <div class="pam-mobile-nav-toggle"><i class="pam-fa pam-fa-bars pam-fa-2x"></i></div>
+  <div class="pam-site-wrapper pam-sticky-wrapper">
+    <div class="pam-sticky-content">
+      <div class="pam-header">
+      <div class="pam-container">
+        <div class="pam-row pam-table-container">
+          <div class="pam-large-5 pam-columns valign-middle logo-left">
+            <a href="index.cfm">{{ .site.title }}</a>
+          </div>
+          <div class="pam-large-7 pam-columns valign-middle header-right">
+            <a class="pn-social-icon" href="#" target="_blank"><i class="pam-fa pam-fa-facebook-square pam-fa-3x"></i></a>
+            <a class="pn-social-icon" href="#" target="_blank"><i class="pam-fa pam-fa-linkedin-square pam-fa-3x"></i></a>
+            <div class="pam-inline-block pam-hover-drop-down">
+              <a class="pam-button">Client Login</a>
+              <div class="pam-drop-down">
+                <ul>
+                  <li><a href="https://wealth.emaplan.com/nylife/SignIn?nylife" target="_blank">eMoney</a></li>
+                  <li><a href="http://www.newyorklife.com/vsc" target="_blank">New York Life Virtual Service Center</a></li>
+                  <li><a href="https://investor.wealthscape.com/NYLIFEsecurities/investor-index.html?login" target="_blank">Eagle Strategies/NYLIFE Securities</a></li>
+                  <li><a href="https://advisor.envestnet.com/secure/app.jsp?_channel=nf" target="_blank">Envestnet</a></li>
+                  <li><a href="https://www3.financialtrans.com/tf/FANWeb?tx=Disclaim&cz=81200081318190024" target="_blank">Mainstay Funds</a></li>
+                  <li><a href="https://www.americanfunds.com/individual/accounts/login.htm" target="_blank">American Funds</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="pam-auto-nav pam-desktop-nav">
+        <%= render("nav") %>
+      </div>
+      <div class="pam-page-content-container">
+      <% if (exists('.pam-page-interior')) { %>
+        <% if (exists('#emerald-page-title')) { %>
+          <div class="title-container">
+            <div class="pam-container">
+              <h1><%= moveFrom('#emerald-page-title') %></h1>
+            </div>
+          </div>
+        <% } %>
+        <div class="pam-container pam-page-content">
+          <%= moveFrom("#emerald-page-content") %>
+        </div>
+      <% } else { %>
+      <%= moveFrom("#emerald-page-content") %>
+      <% } %>
+      </div>
+    </div>
+    <div class="pam-sticky-footer">
+      <div class="pam-footer">
+        <%= moveFrom("#emerald-page-footer") %>
+      </div>
+    </div>
+  </div>
+</script>
+<script data-pam-template-name="nav" type="application/x-pam-template">
+  <ul>
+    <li><a>About</a>
+      <div class="pam-sub-nav">
+        <ul>
+          <li><a href=".1.htm">Meet Our Team</a></li>
+          <li><a href=".7.htm">Strategic Resources</a></li>
+          <li><a href=".6.htm">Our Process</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a>Expertise</a>
+      <div class="pam-sub-nav">
+        <ul>
+          <li><a href=".3.htm">Personal Solutions</a></li>
+          <li><a href=".2.htm">Business Solutions</a></li>
+          <li><a href=".5.htm">Our Products</a></li>
+          <li><a href=".16.htm">Solutions for Physicians</a></li>
+          <li><a href=".17.htm">Solutions for Farmers</a></li>
+          <li><a href=".11.htm">Life plan for your business&reg;</a></li>
+          <li><a href=".4.htm">Investment Management</a></li>
+          <li><a href=".8.htm">Working with Other Professionals</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a>Education</a>
+      <div class="pam-sub-nav">
+      <ul>
+        <li><a href=".13.htm">Newsletters</a></li>
+        <li><a href=".12.htm">Helpful Links</a></li>
+      </ul>
+      </div>
+    </li>
+    <li><a href=".15.htm">Contact Us</a></li>
+  </ul>
+</script>
+<!-- END TEMPLATES -->

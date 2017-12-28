@@ -1,0 +1,56 @@
+---
+{
+  "title": "Strategic Resources",
+  "resource": [
+    {
+      "title": "The Nautilus Group&reg;",
+      "logo": "the-nautilus-group-logo.png",
+      "content": "<p>As a Member Agent of The Nautilus Group&reg;, a service of New York Life Insurance Company, [[NAME]] works hand-in-hand with Nautilus specialists experienced in taxes, estate law, life insurance, accounting, and charitable giving. This relationship helps ensure you benefit from some of the most sound thinking when it comes to your estate.</p>",
+      "readmore": ".10.htm",
+      "readmoretext": "Learn more about The Nautilus Group&reg;"
+    },
+    {
+      "title": "Eagle Strategies LLC",
+      "logo": "eagle-strategies-llc-logo.png",
+      "content": "<p>Through Eagle Strategies, [[NAME]] provides fee-based financial planning, investment advisory services and access to investment management programs. Eagle Strategies LLC is registered with the Securities and Exchange Commission as an \"Investment Adviser\" and is an indirect, wholly-owned subsidiary of New York Life Insurance Company.</p>",
+      "readmore": ".9.htm",
+      "readmoretext": "Learn more about Eagle Strategies LLC"
+    },
+    {
+      "title": "New York Life",
+      "logo": "new-york-life-logo.png",
+      "content": "<p>[[Agent name]] and [[his/her]] fellow financial professionals are proud to be affiliated with New York Life Insurance Company. New York Life and its wholly-owned subsidiaries provide life insurance, fixed annuities, and long-term care insurance. A mutual insurance company, New York Life is one of the largest mutual life insurance company in the United States and holds the highest possible financial strength ratings currently awarded to any life insurer from all four of the major credit rating agencies: A.M. Best (A++), Fitch (AAA), Moody's Investor Service (Aaa), Standard &amp; Poor's (AA+). (Source: Individual independent rating agency commentary as of 8/9/16.)</p>"
+    },
+    {
+      "title": "Ash Brokerage",
+      "logo": "ash-brokerage-logo.png",
+      "content": "<p>Ash Brokerage is an unaffiliated privately-owned family-operated insurance brokerage general agency. Ash provides us with a multitude of products and support for life insurance, long-term care, disability income, and annuities, not available through New York Life or its subsidiaries. Our partnership with Ash complements our mission to provide our clients with objective solutions to suit their individual needs.</p>"
+    },
+    {
+      "title": "CPI Companies",
+      "logo": "cpi-companies-logo.png",
+      "content": "<p>Our firm works with CPI Companies for life insurance brokerage to provide access to tailor- made financial strategies, services and products that our high net worth clients expect and deserve.</p>"
+    },
+    {
+      "title": "Nautilus Plus",
+      "logo": "the-nautilus-group-logo.png",
+      "content": "<p>Nautilus Plus is a highly selective, elite group of skilled professionals that is limited to the top 30 members of The Nautilus Group<sup>&reg;</sup>, those who are among the most accomplished in the industry. Membership is by invitation only.</p><p>Nautilus Plus members have exclusive and unmatched access to a team of experienced Nautilus Group professionals who provide value added, client focused services, consultation, and support to the members as they serve their clients. Nautilus Plus members work in tandem with the dedicated Nautilus Plus staff to provide informed choices and innovative solutions.</p>"
+    }
+  ]
+}
+---
+{{ range $i, $r := .page.resource }}
+  <div class="pam-section">
+    <div class="pam-row">
+      <div class="pam-large-3 pam-columns pam-text-center">
+        <p><img src="{{ file $r.logo }}" alt="{{ $r.title }} Logo" /></p>
+      </div>
+      <div class="pam-large-9 pam-columns">
+        {{$r.content}}
+        {{ if $r.readmore }}
+          <a href="{{ $r.readmore}}" class="pam-button">{{ $r.readmoretext}}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}
