@@ -2,20 +2,13 @@
   background: #fff;
   padding: 10px 0;
   .logo-left{
-    font-size: 3rem;
+    h1{
+      margin: 0;
+      padding: 0;
+      font-size: 1.15rem;
+    }
   }
   .header-right{
-    text-align: right;
-    a{
-      display: inline-block;
-      vertical-align: middle;
-      color: #ddd;
-    }
-    .pam-hover-drop-down{
-      a{
-        color: #333;
-      }
-    }
   }
 }
 
@@ -32,35 +25,7 @@
   }
 }
 
-@media #{$large-up}{
-  .pam-table-container{
-    display: table;
-    table-layout: auto;
-    width: 100%;
-    > .pam-columns{
-      float: none;
-      display: table-cell;
-      &.valign-bottom{
-        img{
-          vertical-align: bottom;
-        }
-        vertical-align: bottom;
-      }
-      &.valign-top{
-        img{
-          vertical-align: top;
-        }
-        vertical-align: top
-      }
-      &.valign-middle{
-        img{
-          vertical-align: middle;
-        }
-        vertical-align: middle;
-      }
-    }
-  }
-}
+
 .reg-rep{
   color: #f00;
 }

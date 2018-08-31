@@ -28,11 +28,10 @@ $subnav-link-hovercolor: #fff;
     margin: 0 auto;
   }
   > ul {
-    display: table;
-    table-layout: auto;
     width: 100%;
+    @extend .pam-flex;
     > li {
-      display: table-cell;
+      flex: 1;
       > a {
         background: $nav-link-bg;
         color: $nav-link-color;

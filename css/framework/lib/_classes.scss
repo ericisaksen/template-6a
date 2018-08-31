@@ -30,5 +30,6 @@
 }
 
 /* Prevent FontAwesome icons from disappearing by inserting <label>description</label> tags */
+[class^="lmg-fa"] label,
 .pam-fa label,
 .fa label { display: none; }
