@@ -60,13 +60,6 @@ img {
   font-size: 0.6875em;
 }
 
-.pam-desktop-nav {
-  display: none;
-  @media #{$large-up} {
-    display: block;
-  }
-}
-
 .cycle-slideshow {
   position: relative;
   z-index: 0;

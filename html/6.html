@@ -1,37 +1,41 @@
 ---
 {
-  "title": "Our Process"
+  "title": "Our Process",
+  "process": [
+    {
+      "title": "Step 1: Review",
+      "content": "<p>Review your individual situation and personal objectives. Every family's financial situation is unique. That's why it's so important to find out as much as we can about you and your financial goals. The more we know about you, the more precise recommendations we can make and the more we can help you. As a result, we may take some time to discuss your hopes, dreams and objectives, and the things that really matter to you. This is the basis for the first meeting with anyone we sit down with.</p>"
+    },
+    {
+      "title": "Step 2: Analyze",
+      "content": "<p>Analyze and review your needs. As needed, we will work with you to identify and prioritize your objectives, and then help establish benchmark goals. This is important because we live in a world of unlimited choices. People often fail to achieve objectives because they try to accomplish too much at once, or they don&rsquo;t attach specific deadlines to their goals. By breaking down your goals to specific objectives, you can look at available resources and decide which goals are realistic, which need to be adjusted and scaled down, and which simply must be abandoned.</p>"
+    },
+    {
+      "title": "Step 3: Develop",
+      "content": "<p>Develop and implement a strategy to help you achieve your goals. Based on our conversation and analysis, we can recommend the steps that it will take to help you achieve your financial goals.</p>"
+    },
+    {
+      "title": "Step 4: Coordinate",
+      "content": "<p>Coordinate your financial activities. We regularly coordinate insurance and financial activities for clients with the other members of their team of financial, tax and legal advisors. We can do the same for you.</p>"
+    },
+    {
+      "title": "Step 5: Implement",
+      "content": "<p>We'll implement your strategy, and work closely with you and your other third party professionals to ensure its success. We'll monitor progress and provide ongoing service as your needs and situation change over time.</p>"
+    },
+    {
+      "title": "Step 6: Monitor",
+      "content": "<p>Planning is not a one-shot deal. Strategies need to be adjusted periodically as your life and the economy changes. We will work with you over the years to help keep your program on track with your changing needs.</p>"
+    }
+  ]
 }
 ---
 <div class="pam-section">
   <p>One thing our clients appreciate about working with us is that we don’t believe in cookie-cutter financial services or a one-size-fits-all approach. Instead, we follow a meticulous process designed to help get to know each client’s situation, goals and level of risk tolerance so that we can make appropriate recommendations to meet their needs. Everyone is different and we may amend our approach to suit a specific client, but in general, we utilize the following process to help those we're privileged to serve.</p>
 </div>
 
-<div class="pam-text-center">
-  <img src="{{ file "#"}}" alt="process graphic" />
-</div>
-<!-- No expandos -->
-<div class="pam-section">
-  <h2>Step 1: Review</h2>
-  <p>Review your individual situation and personal objectives. Every family's financial situation is unique. That's why it's so important to find out as much as we can about you and your financial goals. The more we know about you, the more precise recommendations we can make and the more we can help you. As a result, we may take some time to discuss your hopes, dreams and objectives, and the things that really matter to you. This is the basis for the first meeting with anyone we sit down with.</p>
-</div>
-<div class="pam-section">
-  <h2>Step 2: Analyze</h2>
-  <p>Analyze and review your needs. As needed, we will work with you to identify and prioritize your objectives, and then help establish benchmark goals. This is important because we live in a world of unlimited choices. People often fail to achieve objectives because they try to accomplish too much at once, or they don&rsquo;t attach specific deadlines to their goals. By breaking down your goals to specific objectives, you can look at available resources and decide which goals are realistic, which need to be adjusted and scaled down, and which simply must be abandoned.</p>
-</div>
-<div class="pam-section">
-  <h2>Step 3: Develop</h2>
-  <p>Develop and implement a strategy to help you achieve your goals. Based on our conversation and analysis, we can recommend the steps that it will take to help you achieve your financial goals.</p>
-</div>
-<div class="pam-section">
-  <h2>Step 4: Coordinate</h2>
-  <p>Coordinate your financial activities. We regularly coordinate insurance and financial activities for clients with the other members of their team of financial, tax and legal advisors. We can do the same for you.</p>
-</div>
-<div class="pam-section">
-  <h2>Step 5: Implement</h2>
-  <p>We'll implement your strategy, and work closely with you and your other third party professionals to ensure its success. We'll monitor progress and provide ongoing service as your needs and situation change over time.</p>
-</div>
-<div class="pam-section">
-  <h2>Step 6: Monitor</h2>
-  <p>Planning is not a one-shot deal. Strategies need to be adjusted periodically as your life and the economy changes. We will work with you over the years to help keep your program on track with your changing needs.</p>
-</div>
+{{ range $i, $s := .page.process }}
+  <div class="pam-section">
+    <h2>{{ $s.title }}</h2>
+    {{ $s.content }}
+  </div>
+{{ end }}

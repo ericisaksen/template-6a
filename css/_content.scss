@@ -20,12 +20,17 @@
   }
 }
 .pam-page-interior{
-  background: #777;
+  background: #fff;
   .pam-page-content-container{
     > .title-container{
-      background: #fff;
-      padding: 1em;
+      background: #333;
+      padding: 22% 1em 1em;
       text-align: center;
+      .pam-container{
+        h1{
+          color: #fff;
+        }
+      }
     }
     > .pam-page-content{
       padding: 1em;
@@ -39,112 +44,75 @@
     border-bottom: 1px solid #ddd;
   }
 }
-//Team Page
-.pam-page-1{
-  .team-container{
-    .headshot{
-      background: #ddd;
-      text-align: center;
-      padding: 10px;
-    }
-    .bio{
-      background: #f2f2f2;
-      padding: 10px;
-    }
+.guideposts-content{
+  h2{
+    display: none;
   }
-}
-
-//Process Page
-.pam-page-6{
-  .process-container{
-    text-align: center;
-    h2{
-      text-align: center;
-    }
-    .pam-row{
-      @extend .pam-table-container;
-    }
-    .pam-columns{
-      padding: 1em;
-      color: #fff;
-    }
-    $processbg: #333;
-    $processbg2: #555;
-    $elements: 7;
-    @for $i from 0 to $elements {
-      .pam-columns:nth-child(#{$i}) {
-        @include background-image(
-         linear-gradient( lighten($processbg, $i * 3), lighten($processbg2, $i * 3) )
-        );
-      }
-    }
-    h3{
-      font-size: 3rem;
-      background: #f2f2f2;
-      padding: 1.5rem 0;
-      color: #333;
-    }
-  }
-}
-//Working with Other Advisors
-.pam-page-8{
-  .pam-section{
-    .pam-row{
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto;
-      a.pam-button{
-        i.pam-fa{
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-}
-
-//Helpful Links
-.pam-page-12 {
-  .helpful-links{
-    ul {
-      padding: 0;
-      margin: 0;
-      li{
-        list-style: none;
-        margin-bottom: 5px;
-        a.pam-button{
-          display: block;
-          text-align: center;
-          padding: 2em;
-        }
-      }
-    }
-  }
-}
-
-.pam-page-14{
-  .pam-top-quote{
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1em;
+  img{
     border: 1px solid #ddd;
-    background: #f6f6f4;
   }
-  .calculators{
-    ul {
-      padding: 0;
-      margin: 0;
-      li{
-        list-style: none;
-        margin-bottom: 5px;
-        a.pam-button{
-          display: block;
-          text-align: center;
-          padding: 2em;
-        }
+}
+.pam-top-quote{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+  border: 1px solid #ddd;
+  background: #f6f6f4;
+}
+ul.calculators{
+  flex-flow: row wrap;
+  li{
+    margin: 10px;
+    @media #{$medium-up}{
+      width: calc(50% - 20px);
+    }
+    a.pam-button{
+      display: block;
+      padding: 2em .5em;
+      span{
+        display: block;
       }
     }
   }
 }
 .reg-rep{
   color: #f00 !important;
+}
+
+form{
+  background: #fff;
+  border-radius: 10px;
+  color: $secondary;
+  label{
+    display: flex;
+    align-items: center;
+    color: $secondary;
+  }
+  input[type="text"],
+  input[type="email"]{
+    background: none;
+    border: 2px solid $secondary;
+    border-radius: 5px;
+    height: 55px;
+    width: 100%;
+    padding: 10px;
+  }
+  input[type="submit"]{
+    @extend .pam-button;
+  }
+  ul{
+    display: flex;
+    flex-flow: row wrap;
+    li{
+      width: 33.333%;
+      list-style: none;
+      padding: .5em 0;
+      font-size: .9rem;
+      input{
+        margin: 0 10px 0 0;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
 }

@@ -1,23 +1,25 @@
 /*!
  *
- * Copyright (c) 2014 Grayhorse Enterprises, LLC
+ * Copyright (c) 2019 Grayhorse Enterprises, LLC
  * All Rights Reserved.
  *
- * Created by Prime Agent Marketing of Grayhorse Enterprises, LLC
+ * Created by Lawton Marketing Group
  * Interested in our work? Visit us at:
  *
- * http://primeagentmarketing.com/
+ * http://lawtonmg.com
  *
  */
 
 // CSS imports
-@import url('//s3-us-west-2.amazonaws.com/primeagentmarketing/library/lmg-fa/5.0.13/fontawesome-all.min.css?v=5.1.0');
+@import url('//primeagentmarketing.s3-us-west-2.amazonaws.com/library/fontawesome/5.10.2/all.min.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
 
 // Local settings
 $font-family-sans-serif: 'Lato', sans-serif;
 $font-family-serif: 'Lato', serif;
 
+$primary: #007ac2;
+$secondary: #333;
 
 // Bourbon mixins
 @import "bourbon/bourbon";

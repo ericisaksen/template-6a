@@ -1,6 +1,10 @@
 .pam-header {
   background: #fff;
   padding: 10px 0;
+  max-width: 100%;
+  .pam-container{
+    max-width: 100%;
+  }
   .logo-left{
     h1{
       margin: 0;
@@ -9,6 +13,16 @@
     }
   }
   .header-right{
+    .cl-container{
+      margin: 0 auto 1em;
+      .pam-hover-drop-down{
+        .pam-drop-down{
+          ul{
+            right: 0;
+          }
+        }
+      }
+    }
   }
 }
 

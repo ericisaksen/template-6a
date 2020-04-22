@@ -5,21 +5,21 @@
     {
       "title": "The Nautilus Group&reg;",
       "logo": "the-nautilus-group-logo.png",
-      "content": "<p>As a Member Agent of The Nautilus Group&reg;, a service of New York Life Insurance Company, [[NAME]] works hand-in-hand with Nautilus specialists experienced in taxes, estate law, life insurance, accounting, and charitable giving. This relationship helps ensure you benefit from some of the most sound thinking when it comes to your estate.</p>",
+      "content": "<p>As a Member Agent of The Nautilus Group&reg;, a service of New York Life Insurance Company, <span style='color: red'>[[NAME]]</span> works hand-in-hand with Nautilus specialists experienced in taxes, estate law, life insurance, accounting, and charitable giving. This relationship helps ensure you benefit from some of the most sound thinking when it comes to your estate.</p>",
       "readmore": ".10.htm",
       "readmoretext": "Learn more about The Nautilus Group&reg;"
     },
     {
       "title": "Eagle Strategies LLC",
       "logo": "eagle-strategies-llc-logo.png",
-      "content": "<p>Through Eagle Strategies, [[NAME]] provides fee-based financial planning, investment advisory services and access to investment management programs. Eagle Strategies LLC is registered with the Securities and Exchange Commission as an \"Investment Adviser\" and is an indirect, wholly-owned subsidiary of New York Life Insurance Company.</p>",
+      "content": "<p>Through Eagle Strategies, <span style='color: red'>[[NAME]]</span> provides fee-based financial planning, investment advisory services and access to investment management programs. Eagle Strategies LLC is registered with the Securities and Exchange Commission as an &ldquo;Investment Adviser&rdquo; and is an indirect, wholly-owned subsidiary of New York Life Insurance Company.</p>",
       "readmore": ".9.htm",
       "readmoretext": "Learn more about Eagle Strategies LLC"
     },
     {
       "title": "New York Life",
       "logo": "new-york-life-logo.png",
-      "content": "<p>[[Agent name]] and [[his/her]] fellow financial professionals are proud to be affiliated with New York Life Insurance Company. New York Life and its wholly-owned subsidiaries provide life insurance, fixed annuities, and long-term care insurance. A mutual insurance company, New York Life is one of the largest mutual life insurance company in the United States and holds the highest possible financial strength ratings currently awarded to any life insurer from all four of the major credit rating agencies: A.M. Best (A++), Fitch (AAA), Moody's Investor Service (Aaa), Standard &amp; Poor's (AA+). (Source: Individual independent rating agency commentary as of 8/9/16.)</p>"
+      "content": "<p><span style='color: red'>[[ Name ]]</span> and <span style='color: red'>[[his/her]]</span> fellow financial professionals are proud to be affiliated with New York Life Insurance Company. New York Life and its wholly-owned subsidiaries provide life insurance, fixed annuities, and long-term care insurance. A mutual insurance company, New York Life is one of the largest mutual life insurance companies in the United States and holds the highest possible financial strength ratings currently awarded to any life insurer from all four of the major credit rating agencies: A.M. Best (A++), Fitch (AAA), Moody's Investor Service (Aaa), Standard & Poor's (AA+). (Source: Individual independent rating agency commentary as of 7/30/18.)</p>"
     },
     {
       "title": "Ash Brokerage",
@@ -44,7 +44,7 @@
 
 {{ range $i, $r := .page.resource }}
   <div class="pam-section">
-    <div class="pam-row">
+    <div class="pam-flex">
       <div class="pam-large-3 pam-columns pam-text-center">
         <p><img src="{{ file $r.logo }}" alt="{{ $r.title }} Logo" /></p>
       </div>

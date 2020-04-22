@@ -1,25 +1,58 @@
 ---
 {
-  "title": "Contact Us"
+  "title": "Solutions for Physicians",
+  "services": [
+    {
+      "title": "Charitable Planning",
+      "content": "<p>Serving others is at the core of who you are, or else you would not be in a field that continually puts others first. Our advisors want to help you budget charitable giving as a part of your financial plan. If giving to a cause has been on your heart but you are unsure if it is feasible, consult with us today and we will help you make regular donations to a charity part of your personal financial plan.</p>"
+    },
+    {
+      "title": "Tax Strategies",
+      "content": "<p>You work hard for your money, so it is important to strategize your plan in a way that allows you to save the most. There are potential tax savings strategies that could prevent you paying higher taxes than necessary. Managing your taxes now can help you save long into the future, making goals such as a second home or early retirement possible.</p>"
+    },
+    {
+      "title": "Retirement Planning",
+      "content": "<p>Retirement planning as a physician or other healthcare provider is crucial in order to stay on track and retire on time. Most careers only require 4-6 years of education, but the medical field requires so much more. While others can begin saving for retirement within years of exiting high school, individuals in the medical field can fall behind without proper planning. Our job is to take into account this longer period of education and help you manage your finances in such a way that retiring on time is made possible.</p>"
+    },
+    {
+      "title": "Education Planning",
+      "content": "<p>Planning for the education of your children can be overwhelming, especially when you have just finished paying off student loans of your own. Our team of advisors is prepared to work with you to take into account tuition growth, risks involved, taxes, and more to create a plan best suited to the needs of both you and your children. Sending children off to college is difficult enough; do not let your finances make it even harder. Talk to us about education financing today.</p>"
+    },
+    {
+      "title": "Debt Management",
+      "content": "<p>You would not be where you are today if it were not for hard work and years of education. Unfortunately, your education most likely left you with a hefty debt as well. We want to help you manage that debt in such a way that paying it off becomes not only possible, but also easy. As you look to the future, you should be excited, not worried. As you look back at your education, you should be grateful, not regretful. Our debt management programs will help meet your objectives so that your career, not your debt, can be the center of your focus.</p>"
+    },
+    {
+      "title": "Asset Protection",
+      "content": "<p>Unexpected events can happen at any given moment such as divorce, lawsuits, liability claims, and more. There are numerous financial strategies and retirement income plans that can help you accumulate assets for the future, shield your business and personal assets from liabilities, and safeguard asset transfer to children and grandchildren. We can help you figure out what the right course of action is for your specific situation and objectives.</p>"
+    },
+    {
+      "title": "Employee Benefits",
+      "content": "<p>In healthcare, every employee matters. No office can run smoothly without the help of administrative staff, managers, nurses, assistants, and other staff members. This team is what keeps clients satisfied, schedules complete, and priorities in order. Benefits ensure your employees are dedicated to staying with your practice. Although a need for income leads candidates to apply, it is benefits such as dental and medical insurance and leave time that motivate them to stay. Our job is to help you decide which benefits are best for your company and how to plan and implement them according to your company goals.</p>"
+    },
+    {
+      "title": "Insurance",
+      "content": "<p>With so many possibilities available today, picking the right one can be a complicated and frustrating task if attempted alone. A plan can make or break your business and your personal reputation depending on its coverage. The right plan can protect you, your assets, and your name in case of error or liability whereas the wrong plan can permanently damage your practice. Our advisors specialize in insurance and can assist you with choosing the correct type of coverage for your specialty.</p>"
+    },
+    {
+      "title": "Disability Insurance",
+      "content": "<p>In an emergency in which the main provider of your family is no longer able to work, disability insurance protects your source of income so that your family still has a source of stability. When the ability to make future plans for investment (ex: school, cars, homes) based on the assumption of future income is taken away by illness or injury, our agents can help you protect your current lifestyle and long term goals. In addition to new medical expenses, one’s income is also reduced or even terminated at the onset of an illness or injury. As the main provider for your family, you should strongly consider disability insurance if your spouse does not believe he or she could maintain financial stability, pay the mortgage, or pay off expenses on your spouse’s income alone.</p>"
+    }
+  ]
 }
 ---
-<div class="pam-section pam-text-center">
-  <h2>[[DBA Name]]</h2>
-  <p>[[Address line 1]]<br />
-  [[City, State Zip]]<br />
-  Phone: <a href="tel:0000000000">000-000-0000</a><br />
-  Fax: 000-000-0000<br />
-  <a href=”mailto:name@domain.com”>Name@Domain.com</a></p>
+<div class="pam-section">
+  <p>Here at {{ if .site.dba }}{{ .site.dba }}{{ else }}<span style="color: red">Set the DBA Name</span>{{ end }}, we understand the financial challenges of being in the healthcare industry. Our advisors are prepared to work with you every step of the way, from residency until retirement. Our team focusses on the financial planning of medical providers of all specialties. No matter your specialty and no matter what challenges you face, we are here to assist you.</p>
+
+  <p>Many years of education and residency, long hours, and stressful days can all take a toll on your financial management. It is our goal to take over the stress of developing a financial management plan so that you can devote your attention to what matters: your patients. Gaining understanding of your goals, values, and circumstances is only the beginning. Once we develop a relational understanding of who you are, your goals and objectives, we will customize a plan that meets your needs.</p>
+
+  <p>Collaborating with us ensures your finances are secure in your otherwise unpredictable and hectic career. Your patients and their cases may change daily, but as we create, monitor, and implement your financial plan, the stability of your future is firm. From student loans to asset protection, taxes to retirement, and debt to insurance, we have the knowledge and resources to provide the assistance you need. Our team knows how different the finances of healthcare providers can be compared to other careers and we are experts in tailoring your financial plan specifically to you and your career.</p>
 </div>
-<div class="pam-row pam-text-center">
-  <div class="pam-large-6 pam-columns">
-
-      <!-- office image -->
-
-  </div>
-  <div class="pam-large-6 pam-columns">
-
-      <!-- map iframe -->
-
-  </div>
+<div data-expander=".pam-section" data-expander-title="h2">
+  {{ range $i, $s := .page.services }}
+    <div class="pam-section">
+      <h2>{{ $s.title }}</h2>
+      {{ $s.content }}
+    </div>
+  {{ end }}
 </div>

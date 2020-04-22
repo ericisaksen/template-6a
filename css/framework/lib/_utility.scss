@@ -1,18 +1,23 @@
 /* Utility classes */
 
 .pam-button {
-  background: $button-bg;
-  color: $button-fg;
-  &:hover {
-    background: $button-active-bg;
-    color: $button-active-fg;
-  }
-  @include transition(background-color .2s, color .2s);
+  background-color: #333;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
-  display: inline-block;
-  padding: 0.5em 1em;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
+  white-space: normal;
+	width: auto;
+  transition: all .5s;
+  display: inline-block;
+  &:hover{
+    opacity: .65;
+  }
 }
 
 .pam-drop-down {

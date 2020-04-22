@@ -1,6 +1,4 @@
-$nav-bg: #000;
-$nav-link-bg: #000;
-$nav-link-color: #fff;
+$nav-link-color: #000;
 $nav-link-hoverbg: #333;
 $nav-link-hovercolor: #ddd;
 $subnav-bg: #333;
@@ -11,9 +9,13 @@ $subnav-link-hovercolor: #fff;
 
 
 .pam-auto-nav {
-  background: $nav-bg;
   position: relative;
   z-index: 1;
+  display: none;
+  @media #{$large-up}{
+    display: flex;
+    justify-content: flex-end;
+  }
   a {
     display: block;
     padding: 0.5em 1em;
@@ -24,16 +26,14 @@ $subnav-link-hovercolor: #fff;
   ul{
     list-style: none;
     padding: 0;
-    max-width: $container-width;
     margin: 0 auto;
   }
   > ul {
-    width: 100%;
-    @extend .pam-flex;
+    margin: 0;
+    padding: 0;
     > li {
-      flex: 1;
+      display: inline-block;
       > a {
-        background: $nav-link-bg;
         color: $nav-link-color;
         text-align: center;
       }

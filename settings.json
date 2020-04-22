@@ -2,5 +2,163 @@
 	"Title": "T5A",
 	"Name": "t5a",
 	"Password": "fc0f0a96",
-	"Emerald": {}
+	"Emerald": {},
+	"Globals": {
+		"dba": "",
+		"logo": "",
+		"nautilus_name": "",
+		"plural_name": "",
+		"eagle_name": "",
+		"pronoun": "",
+		"email": "",
+		"phone": "",
+		"fax": "",
+		"address": {
+			"address_line_1": "",
+			"address_line_2": "",
+			"city": "",
+			"state": "",
+			"zip": ""
+		},
+		"nav": [
+			{
+				"title": "About",
+				"sub_nav": [
+					{
+						"title": "Meet Our Team",
+						"url": ".1.htm"
+					},
+					{
+						"title": "Strategic Resources",
+						"url": ".7.htm"
+					},
+					{
+						"title": "Our Process",
+						"url": ".6.htm"
+					}
+				]
+			},
+			{
+				"title": "Expertise",
+				"sub_nav": [
+					{
+						"title": "Personal Solutions",
+						"url": ".3.htm"
+					},
+					{
+						"title": "Business Solutions",
+						"url": ".2.htm"
+					},
+					{
+						"title": "Our Products",
+						"url": ".5.htm"
+					},
+					{
+						"title": "Solutions for Physicians",
+						"url": ".15.htm"
+					},
+					{
+						"title": "Solutions for Farmers",
+						"url": ".16.htm"
+					},
+					{
+						"title": "Life plan for your business<sup>&reg;</sup>",
+						"url": ".11.htm"
+					},
+					{
+						"title": "Special Needs Planning",
+						"url": ".19.htm"
+					},
+					{
+						"title": "Income Tax Strategies",
+						"url": ".20.htm"
+					},
+					{
+						"title": "Investment Management",
+						"url": ".4.htm"
+					},
+					{
+						"title": "Working with Other Professionals",
+						"url": ".8.htm"
+					}
+				]
+			},
+			{
+				"title": "Education",
+				"sub_nav": [
+					{
+						"title": "Nautilus Blog",
+						"url": ".22.htm"
+					},
+					{
+						"title": "Video Library",
+						"url": ".17.htm"
+					},
+					{
+						"title": "Guideposts",
+						"url": ".21.htm"
+					},
+					{
+						"title": "Newsletters",
+						"url": ".13.htm"
+					},
+					{
+						"title": "Helpful Links",
+						"url": ".12.htm"
+					},
+					{
+						"title": "Calculators",
+						"url": ".18.htm"
+					}
+				]
+			},
+			{
+				"title": "Contact us",
+				"url": ".14.htm"
+			}
+		],
+		"client_login": {
+			"exists": true,
+			"links": [
+				{
+					"title": "eMoney",
+					"url": "https://wealth.emaplan.com/nylife/SignIn?nylife"
+				},
+				{
+					"title": "New York Life Virtual Service Center",
+					"url": "http://www.newyorklife.com/vsc"
+				},
+				{
+					"title": "Eagle Strategies/NYLIFE Securities",
+					"url": "https://investor.wealthscape.com/NYLIFEsecurities/investor-index.html?login"
+				},
+				{
+					"title": "Envestnet",
+					"url": "https://advisor.envestnet.com/secure/app.jsp?_channel=nf"
+				},
+				{
+					"title": "Mainstay Funds",
+					"url": "https://www3.financialtrans.com/tf/FANWeb?tx=Disclaim&cz=81200081318190024"
+				},
+				{
+					"title": "American Funds",
+					"url": "https://www.americanfunds.com/individual/accounts/login.htm"
+				}
+			]
+		},
+		"team": [
+			{
+				"name": "",
+				"headshot": "",
+				"position": "",
+				"bio": ""
+			},
+			{
+				"name": "",
+				"headshot": "",
+				"position": "",
+				"bio": ""
+			}
+		]
+	}
 }

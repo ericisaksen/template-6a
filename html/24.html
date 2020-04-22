@@ -1,0 +1,52 @@
+---
+{
+"title": "Send a Referral"
+}
+---
+<div class="pam-flex">
+  <div class="pam-large-12 pam-columns">
+    <p>We’re very proud that we’ve grown over the years through word-of-mouth referrals from our clients. Receiving a referral is the highest compliment you can give us and we appreciate your confidence and trust.  Please fill out the form below and we'll get in touch.</p>
+  </div>
+</div>
+<form action="/form_proc.cfm" id="contactForm" method="post" name="referralForm">
+  <input name="email_subject" type="hidden" value="Website Referral Form" />
+  <div class="form-section">
+    <div class="pam-flex">
+      <div class="pam-medium-6 pam-columns">
+        <p>
+          <label for="name">Your Name</label>
+          <input name="name" id="name" type="text" />
+        </p>
+      </div>
+      <div class="pam-medium-6 pam-columns">
+        <p>
+          <label for="email">Your Email</label>
+          <input name="email" id="email" type="text" />
+        </p>
+      </div>
+    </div>
+    <div class="pam-flex">
+      <div class="pam-medium-4 pam-columns">
+        <p>
+          <label for="referralName">Referral Name</label>
+          <input name="referral_name" id="referralName" type="text" />
+        </p>
+      </div>
+      <div class="pam-medium-4 pam-columns">
+        <p>
+          <label for="referralPhone">Referral Phone Number</label>
+          <input name="referral_phone" id="referralPhone" type="text" />
+        </p>
+      </div>
+      <div class="pam-medium-4 pam-columns">
+        <p>
+          <label for="referralEmail">Referral Email</label>
+          <input name="referral_email" id="referralEmail" type="text" />
+        </p>
+      </div>
+      <div class="pam-large-12 pam-columns">
+        <input class="pam-button" type="submit" value="Submit" /></p>
+      </div>
+    </div>
+  </div>
+</form>

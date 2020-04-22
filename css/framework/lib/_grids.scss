@@ -10,33 +10,48 @@
 .pam-grid-row {
   display: table-row;
 }
-.pam-flex{
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  &.jc{
+  .pam-flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &.je{
+      justify-content: flex-end;
+    }
+    &.jc{
+      justify-content: center;
+    }
+    &.sb{
+      justify-content: space-between;
+    }
+    &.sa{
+      justify-content: space-around;
+    }
+    &.ai{
+      align-items: center;
+    }
+    &.ae{
+      align-items: flex-end;
+    }
+    > .pam-columns{
+      float: none !important;
+    }
+  }
+  ul.pam-flex{
+    list-style: none;
     justify-content: center;
+    li{
+      margin: 0 10px;
+    }
   }
-  &.sb{
-    justify-content: space-between;
-  }
-  &.sa{
-    justify-content: space-around;
-  }
-  &.ai{
-    align-items: center;
-  }
-  > .pam-columns{
-    float: none !important;
-  }
-}
+
 .pam-column,
 .pam-columns {
   padding: 0 1.25%;
+  width: 100%;
   &.pam-collapse {
     padding: 0;
   }
@@ -56,6 +71,9 @@
   .pam-#{$size}-2 { width: 16.66%; }
   .pam-#{$size}-1 { width: 8.33%; }
   [class*=pam-#{$size}-].pam-columns {
+    .pam-flex &{
+      float: none;
+    }
     float: left;
   }
   .pam-#{$size}-pull-11{ position: relative; left: -91.66667%;  }
